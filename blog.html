@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog || PH Tube</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-screen-xl mx-auto p-5">
+    <!-- header section -->
+    <header class="my-3 md:my-5">
+        <section class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img class="w-2/4 sm:w-full" src="./assets/Logo.png" alt="">
+            </div>
+            <div class="">
+                <button id="home-page"
+                    class="py-1 sm:py-2 md:py-3 px-2 sm:px-3 md:px-5 rounded font-medium bg-[#FF1F3D] text-white  hover:bg-orange-500">Home</button>
+            </div>
+        </section>
+    </header>
+    <hr>
+
+    <!-- main section -->
+    <main class="mt-4">
+        <section class="md:w-3/4 mx-auto">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Discuss the scope of var, let, and const.
+                </div>
+                <div class="collapse-content">
+                    <p><span class="text-2xl font-medium">var: </span> জেএস এর ইএস৬ আসার আগে কোন কিছু ডিক্লেয়ার করার জন্য
+                        ব্যবহার করা হতো। var ব্যবহার করলে এইটা hoisted হয়ে ওই ফাংশন বা ফাইলের একবারে উপরে চলে আসে। এই var কে
+                        ওই জেএস ফাইলের সবজায়গা থেকে এক্সেস করা যায়। এটাকে একই নামে এবং ভ্যালু চেঞ্জ করে আবার ডিক্লেয়ার করা
+                        যায়।</p>
+                    <p class="mt-5"><span class="text-2xl font-medium">let:</span> জেএস এর ইএস৬ আসার পর থেকে এর ব্যবহার শুরু হয়। লেট
+                        দিয়ে কোন ভ্যালু ডিক্লেয়ার করলে ওই নামে আরেকটা ভ্যালু ডিক্লেয়ার করা যায় না। কিন্তু এর মান বা ভ্যালু
+                        আপডেট করা যায়। এইটা হচ্ছে ব্লক স্কোপ। এইটাকে কোন দ্বিতীয় বন্ধনীর ভিতরে ব্যবহার করলে এইটাকে শুধু ওই
+                        বন্ধনীর ভিতর থেকেই এক্সেস করা যাবে। বন্ধনীর বাহির থেকে করা যায় না। </p>
+                    <p class="mt-5"><span class="text-2xl font-medium">const:</span> জেএস এর ইএস৬ আসার পর থেকে এর ব্যবহার শুরু হয়। const
+                        দিয়ে কোন ভ্যালু ডিক্লেয়ার করলে ওই নামে আরেকটা ভ্যালু ডিক্লেয়ার করা যায় না। এবং এর মান বা ভ্যালু
+                        আপডেট করা যায় না। এটা হচ্ছে ব্লক স্কোপ। এইটাকে কোন দ্বিতীয় বন্ধনীর ভিতরে ব্যবহার করলে এইটাকে শুধু ওই
+                        বন্ধনীর ভিতর থেকেই এক্সেস করা যাবে। বন্ধনীর বাহির থেকে করা যায় না।</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mt-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    Tell us the use cases of "null" and "undefined"
+                </div>
+                <div class="collapse-content">
+                    <p><span class="text-2xl font-medium">null:</span> ডিক্লেয়ার করা কোন ভ্যারিয়েবল এর মান null হিসেবে সেট
+                        করা যায়। এবং কোন ভ্যারিয়েবলের মান null হিসেবে সেট করা আছে কিনা, তা null দিয়ে চেক করা যায়।</p>
+                    <p class="mt-5"><span class="text-2xl font-medium">undefined: </span>যখন কোন ভ্যালু ডিক্লেয়ার করা হয় এবং এর মান সেট
+                        না করলে, তখন এর মান অটোমেটিকভাবে undefined হয় অথবা কোন অবজেক্টের মধ্যে কোন প্রপার্টি মিসিং থাকলে এর
+                        মান undefined হয়। কোন ফাংশন এর ভিতর থেকে কোন রিটার্ন না করলেও ওই ফাংশনের মান বা ভ্যালু undefined হয়।</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 mt-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                    What do you mean by REST API?
+                </div>
+                <div class="collapse-content">
+                    <p>REST API এর পূর্ণরূপ হচ্ছে Representational State Transfer Application Programming Interface.
+                        REST API এর সাহায্যে আমরা কোন সার্ভারে সংরক্ষন করে রাখা ডাটা এনে ব্যবহার করতে পারি। কোন API লিঙ্ক কে
+                        fetch
+                        করার মাধ্যমে ওই সার্ভারে ডাটার জন্য রিকুয়েস্ট করা হয়, এবং ডাটা লোড করে ডাটাগুলোকে প্রয়োজনমত ব্যবহার করা
+                        যায়।</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <div class="text-center text-sm my-5 md:my-10">&copy2023 - PH Tube. All Right Reserved.</div>
+    </footer>
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>
